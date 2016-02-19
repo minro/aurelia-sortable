@@ -1,6 +1,7 @@
 <template>    
-    <div class="container" sortable="scroll.bind: '.page-host'; items.bind: cards">
-        <div class="item" repeat.for="card of cards" sortable-item="item.bind: card">${card.id}</div>
-    </div>   
-    <div ref="placeHolder" class="placeholder"></div> 
+    <div class="wrapper">
+        <div class="container" sortable="scroll.bind: '.page-host'; items.bind: cards">
+            <div class="item" repeat.for="card of cards" sortable-item="item.bind: card">${card.id}</div>
+        </div>
+    </div>
 </template>
